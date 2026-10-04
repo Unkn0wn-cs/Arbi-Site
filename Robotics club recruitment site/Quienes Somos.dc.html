@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/nocturne-463e0dc1-8fad-4a8f-b830-c6d6be16875f/styles.css">
+<link rel="stylesheet" href="arbi-palette.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<script src="_ds/nocturne-463e0dc1-8fad-4a8f-b830-c6d6be16875f/_ds_bundle.js"></script>
+<script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+<script src="./image-slot.js"></script>
+<style>html{scroll-behavior:smooth}body{margin:0;background:var(--color-bg)} a{color:var(--color-accent)} a:hover{color:var(--color-accent-300)}
+@keyframes blink{50%{opacity:.2}}
+@keyframes busflow{from{background-position:0 0}to{background-position:-240px 0}}
+@keyframes scanline{0%{top:0}100%{top:100%}}</style>
+</helmet>
+<div style="background:var(--color-bg);color:var(--color-text);overflow-x:hidden">
+<dc-import name="SiteNav" active="quienes" hint-size="100%,0px"></dc-import>
+
+<header data-screen-label="Quiénes somos · Encabezado" style="position:relative;overflow:hidden;padding:clamp(120px,13vw,160px) clamp(20px,5vw,64px) clamp(36px,4vw,56px);background:radial-gradient(ellipse 60% 85% at 88% 0%,color-mix(in srgb,var(--color-accent-900) 85%,transparent),color-mix(in srgb,var(--color-accent-900) 35%,transparent) 45%,transparent 100%),radial-gradient(ellipse 45% 60% at 0% 20%,color-mix(in srgb,var(--color-accent-2-900) 80%,transparent),transparent 100%)">
+  <div style="position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(var(--color-accent-2-900) 1px,transparent 1px),linear-gradient(90deg,var(--color-accent-2-900) 1px,transparent 1px);background-size:48px 48px;opacity:0.4;mask-image:radial-gradient(ellipse 70% 90% at 80% 0%,#000,transparent 100%);-webkit-mask-image:radial-gradient(ellipse 70% 90% at 80% 0%,#000,transparent 100%)"></div>
+  <div data-reveal="0" style="position:relative;max-width:1200px;margin:0 auto;display:flex;flex-direction:column;gap:18px">
+    <div style="display:flex;align-items:center;gap:12px;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--color-neutral-300)"><span style="width:32px;height:1px;background:var(--color-accent)"></span><span>Quiénes somos</span></div>
+    <h1 style="margin:0;font-size:clamp(56px,9vw,128px);line-height:0.9;letter-spacing:-0.045em;font-weight:500">Somos Arbi.</h1>
+    <p style="margin:0;font-size:clamp(16px,1.6vw,19px);line-height:1.55;color:var(--color-neutral-200);max-width:620px;text-wrap:pretty">El club de robótica competitiva de la Universidad Metropolitana. Construimos robots autónomos con IA y los llevamos a competir fuera del país.</p>
+  </div>
+</header>
+
+<section data-screen-label="Equipo" style="padding:0 clamp(20px,5vw,64px) clamp(32px,4vw,48px)">
+  <div style="max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;gap:clamp(24px,4vw,48px);align-items:stretch">
+    <div data-reveal="1" class="lighten" style="position:relative;flex:2 1 560px;min-width:0;aspect-ratio:16 / 10;border-radius:var(--radius-lg);overflow:hidden"><img src="assets/team.png" alt="El equipo Arbi" style="position: absolute; inset: 0; width: 826px; height: 726px; object-fit: cover; object-position: center 75%; left: -1px; top: -153px"></div>
+    <div style="flex:1 1 240px;min-width:0;display:flex;flex-direction:column;justify-content:center;align-items:stretch;gap:clamp(18px,2.4vw,28px);text-align:left">
+      <div data-reveal="0" style="display:flex;flex-direction:column;gap:6px;padding-top:14px;background:linear-gradient(to right,var(--color-accent),transparent) top / 100% 1px no-repeat"><span class="text-muted" style="font-size:12px;letter-spacing:0.08em;text-transform:uppercase">Fundado</span><span style="font-size:clamp(24px,2.6vw,32px);font-weight:500;letter-spacing:-0.02em">2025</span></div>
+      <div data-reveal="1" style="display:flex;flex-direction:column;gap:6px;padding-top:14px;background:linear-gradient(to right,var(--color-accent),transparent) top / 100% 1px no-repeat"><span class="text-muted" style="font-size:12px;letter-spacing:0.08em;text-transform:uppercase">Experiencia de los fundadores</span><span style="font-size:clamp(24px,2.6vw,32px);font-weight:500;letter-spacing:-0.02em">~10 años acumulados</span></div>
+      <div data-reveal="2" style="display:flex;flex-direction:column;gap:6px;padding-top:14px;background:linear-gradient(to right,var(--color-accent),transparent) top / 100% 1px no-repeat"><span class="text-muted" style="font-size:12px;letter-spacing:0.08em;text-transform:uppercase">Mejor resultado</span><span style="font-size:clamp(24px,2.6vw,32px);font-weight:500;letter-spacing:-0.02em">5º en las Américas</span></div>
+      <div data-reveal="3" style="display:flex;flex-direction:column;gap:6px;padding-top:14px;background:linear-gradient(to right,var(--color-accent),transparent) top / 100% 1px no-repeat"><span class="text-muted" style="font-size:12px;letter-spacing:0.08em;text-transform:uppercase">Abierto a</span><span style="font-size:clamp(24px,2.6vw,32px);font-weight:500;letter-spacing:-0.02em">Todas las carreras</span></div>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="Junta directiva" style="padding:clamp(32px,4vw,56px) clamp(20px,5vw,64px)">
+  <div style="max-width:1200px;margin:0 auto;display:flex;flex-direction:column;gap:clamp(24px,3vw,36px)">
+    <div data-reveal="0" style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px">
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <div style="display:flex;align-items:center;gap:12px;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--color-neutral-300)"><span style="width:32px;height:1px;background:var(--color-accent)"></span><span>Junta directiva</span></div>
+        <h2 style="margin:0;font-size:clamp(32px,4.4vw,56px);line-height:1;letter-spacing:-0.035em;font-weight:500">El circuito que mueve a Arbi.</h2>
+      </div>
+      <span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:13px;color:var(--color-neutral-300);display:flex;align-items:center;gap:8px"><span style="width:7px;height:7px;border-radius:50%;background:var(--color-accent);box-shadow:0 0 8px var(--color-accent);animation:blink 1.4s steps(1) infinite"></span>5 / 5 módulos en línea</span>
+    </div>
+    <div data-reveal="1" style="position:relative;padding-top:28px">
+      <div style="position:absolute;left:0;right:0;top:0;height:2px;background:linear-gradient(90deg,transparent,var(--color-neutral-700) 48px,var(--color-neutral-700) calc(100% - 48px),transparent)"></div>
+      <div style="position:absolute;left:0;right:0;top:0;height:2px;background-image:linear-gradient(90deg,transparent 0 200px,var(--color-accent-2) 200px 240px);background-size:240px 2px;animation:busflow 2.4s linear infinite;mask-image:linear-gradient(90deg,transparent,#000 48px,#000 calc(100% - 48px),transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 48px,#000 calc(100% - 48px),transparent);filter:drop-shadow(0 0 4px var(--color-accent))"></div>
+      <span style="position:absolute;left:0;top:-22px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;color:var(--color-neutral-400)">BUS_JD · I²C 0x40</span>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:14px">
+        <sc-for list="{{ junta }}" as="m" hint-placeholder-count="5">
+          <article style="position:relative;display:flex;flex-direction:column;border-radius:var(--radius-md);background:var(--color-surface);box-shadow:inset 0 0 0 1px var(--color-neutral-700);transition:transform .25s ease,box-shadow .25s ease" style-hover="transform:translateY(-4px);box-shadow:inset 0 0 0 1px var(--color-accent),0 0 24px color-mix(in srgb,var(--color-accent) 25%,transparent)">
+            <span style="position:absolute;left:50%;top:-28px;width:2px;height:28px;background:var(--color-neutral-600)"></span>
+            <span style="position:absolute;left:calc(50% - 4px);top:-32px;width:10px;height:10px;border-radius:50%;background:var(--color-bg);box-shadow:inset 0 0 0 2px var(--color-accent)"></span>
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 12px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;color:var(--color-neutral-300);background:linear-gradient(to right,transparent,var(--color-neutral-700) 24px,var(--color-neutral-700) calc(100% - 24px),transparent) bottom / 100% 1px no-repeat">
+              <span style="color:var(--color-accent-200)">{{ m.id }}</span>
+              <span style="display:flex;align-items:center;gap:6px">ONLINE<span style="width:6px;height:6px;border-radius:50%;background:var(--color-accent);box-shadow:0 0 6px var(--color-accent);animation:blink 1.4s steps(1) infinite"></span></span>
+            </div>
+            <div style="position:relative;margin:12px;aspect-ratio:1 / 1;border-radius:6px;overflow:hidden;background:var(--color-bg)">
+              <image-slot id="{{ m.slot }}" shape="rect" placeholder="Foto del miembro"></image-slot>
+              <span style="position:absolute;left:6px;top:6px;width:12px;height:12px;border-left:1.5px solid var(--color-accent);border-top:1.5px solid var(--color-accent);pointer-events:none"></span>
+              <span style="position:absolute;right:6px;top:6px;width:12px;height:12px;border-right:1.5px solid var(--color-accent);border-top:1.5px solid var(--color-accent);pointer-events:none"></span>
+              <span style="position:absolute;left:6px;bottom:6px;width:12px;height:12px;border-left:1.5px solid var(--color-accent);border-bottom:1.5px solid var(--color-accent);pointer-events:none"></span>
+              <span style="position:absolute;right:6px;bottom:6px;width:12px;height:12px;border-right:1.5px solid var(--color-accent);border-bottom:1.5px solid var(--color-accent);pointer-events:none"></span>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:4px;padding:0 14px 14px">
+              <span style="font-size:17px;font-weight:500;letter-spacing:-0.01em">{{ m.name }}</span>
+              <div style="display:flex;flex-direction:column;gap:3px;margin-top:6px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;color:var(--color-neutral-400)">
+                <span>carrera:</span>
+                <span style="color:var(--color-accent-200);font-size:12px;line-height:1.4">{{ m.carrera }}</span>
+              </div>
+            </div>
+            <div style="display:flex;justify-content:space-between;padding:0 14px 10px">
+              <span style="display:flex;gap:5px"><span style="width:5px;height:5px;background:var(--color-neutral-600)"></span><span style="width:5px;height:5px;background:var(--color-neutral-600)"></span><span style="width:5px;height:5px;background:var(--color-neutral-600)"></span><span style="width:5px;height:5px;background:var(--color-neutral-600)"></span></span>
+              <span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:10px;color:var(--color-neutral-500)">{{ m.addr }}</span>
+            </div>
+          </article>
+        </sc-for>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="Cómo trabajamos" style="padding:clamp(32px,4vw,56px) clamp(20px,5vw,64px) clamp(40px,5vw,64px)">
+  <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:clamp(20px,4vw,64px);align-items:start">
+    <div data-reveal="0" style="display:flex;flex-direction:column;gap:14px">
+      <div style="display:flex;align-items:center;gap:12px;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--color-neutral-300)"><span style="width:32px;height:1px;background:var(--color-accent)"></span><span>Cómo trabajamos</span></div>
+      <h2 style="margin:0;font-size:clamp(32px,4.4vw,56px);line-height:1;letter-spacing:-0.035em;font-weight:500">Un equipo, muchas áreas.</h2>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:12px;grid-column:span 2;min-width:0">
+      <div data-reveal="1" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:12px">
+        <div class="card" style="padding:22px;gap:10px"><i class="ph ph-calendar-blank" style="font-size:26px;color:var(--color-accent)"></i><div class="card-title" style="font-size:18px">Cada viernes, 2:00 pm</div><p class="card-body" style="font-size:14px;line-height:1.5">Nos reunimos a construir, programar y probar.</p></div>
+        <div class="card" style="padding:22px;gap:10px"><i class="ph ph-graduation-cap" style="font-size:26px;color:var(--color-accent)"></i><div class="card-title" style="font-size:18px">Aprendes haciendo</div><p class="card-body" style="font-size:14px;line-height:1.5">Talleres desde cero.</p></div>
+      </div>
+      <div data-reveal="2" class="card" style="padding:22px;gap:14px">
+        <div class="card-title" style="font-size:18px">Áreas en las que puedes participar</div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px">
+          <span class="tag tag-neutral">Programación</span><span class="tag tag-neutral">Electrónica</span><span class="tag tag-neutral">Mecánica / CAD</span><span class="tag tag-neutral">Diseño 3D / impresión</span><span class="tag tag-neutral">Estrategia de competencia</span><span class="tag tag-neutral">Diseño / redes / media</span><span class="tag tag-neutral">Logística y patrocinios</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<dc-import name="SiteFooter" hint-size="100%,420px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    const sis = 'Ing. de Sistemas';
+    const j = [
+      ['Sofía León', sis + ' · Ing. Eléctrica'],
+      ['Daniel Denis', 'Ing. Eléctrica'],
+      ['Samuel Hernández', sis],
+      ['Elisaul Velázquez', sis],
+      ['Adrian Guevara', sis]
+    ];
+    return {
+      junta: j.map(([name, carrera], i) => ({
+        id: 'ARB-0' + (i + 1), slot: 'junta-' + (i + 1), addr: '0x4' + i, name, carrera
+      }))
+    };
+  }
+}
+</script>
+</body>
+</html>

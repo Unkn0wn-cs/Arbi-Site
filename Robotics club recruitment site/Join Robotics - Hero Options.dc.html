@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas">
+<link rel="stylesheet" href="_ds/nocturne-463e0dc1-8fad-4a8f-b830-c6d6be16875f/styles.css">
+<script src="_ds/nocturne-463e0dc1-8fad-4a8f-b830-c6d6be16875f/_ds_bundle.js"></script>
+<style>body{margin:0;background:var(--color-bg)} a{color:var(--color-accent)} a:hover{color:var(--color-accent-300)}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes scrollUp{to{transform:translateY(-50%)}}
+@keyframes trace{from{stroke-dashoffset:100}to{stroke-dashoffset:0}}
+@keyframes cad{from{transform:rotateX(-24deg) rotateY(0deg)}to{transform:rotateX(-24deg) rotateY(360deg)}}
+@keyframes cad2{from{transform:rotateY(45deg) rotateX(0deg)}to{transform:rotateY(45deg) rotateX(360deg)}}
+@keyframes gridpan{to{background-position:48px 48px,48px 48px}}
+@keyframes scan{0%{transform:translateY(-10%)}100%{transform:translateY(830px)}}
+@keyframes wordin{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@keyframes blink{50%{opacity:0}}
+@keyframes bob{50%{transform:translateY(6px)}}
+@keyframes padpulse{50%{opacity:.25}}
+</style>
+</helmet>
+<section style="padding:64px;display:flex;flex-direction:column;gap:32px">
+  <div style="display:flex;flex-direction:column;gap:8px;max-width:720px">
+    <div style="font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-accent)">Ronda 2 · Hero centrado animado</div>
+    <h2 style="margin:0">JOIN ROBOTICS! al centro, el taller de fondo</h2>
+    <p class="text-muted" style="margin:0;text-wrap:pretty">Cuatro capas animadas: engranajes, pieza CAD girando, código desplazándose y pistas de circuito con pulsos de corriente. Mueve el mouse sobre el hero para el efecto parallax. Las capas y la velocidad se ajustan en Tweaks.</p>
+  </div>
+  <div id="2a" style="display:flex;flex-direction:column;gap:12px">
+    <div style="display:flex;align-items:center;gap:10px"><span class="tag tag-outline">2a</span><span style="font-size:14px">Taller en movimiento</span></div>
+    <div onMouseMove="{{ onMove }}" onMouseLeave="{{ onLeave }}" style="width:1280px;height:820px;position:relative;overflow:hidden;border-radius:var(--radius-lg);background:radial-gradient(ellipse at 50% 120%,var(--color-accent-900),var(--color-bg) 65%);box-shadow:var(--shadow-sm)">
+      {{ bg }}
+      <div style="position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 46% 42% at 50% 52%,var(--color-bg) 35%,transparent 100%)"></div>
+      <nav class="nav" style="position:absolute;top:0;left:0;right:0;padding:24px 48px">
+        <span class="nav-brand">Arbi</span>
+        <a href="#">Quiénes somos</a><a href="#">Qué hacemos</a><a href="#">Logros</a><a href="#">Temporada</a><a href="#">FAQ</a>
+        <a href="#" class="btn btn-primary" style="color:var(--color-accent)">Únete</a>
+      </nav>
+      <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px;text-align:center;pointer-events:none">
+        <span class="tag tag-accent" style="pointer-events:auto">Reclutamiento 2026 abierto</span>
+        <h1 style="margin:0;font-size:168px;line-height:0.88;letter-spacing:-0.045em;display:flex;flex-direction:column;align-items:center">
+          <span style="color:transparent;-webkit-text-stroke:2px var(--color-accent)">JOIN</span>
+          <span style="text-shadow:0 0 48px color-mix(in srgb,var(--color-accent) 45%,transparent)">ROBOTICS!</span>
+        </h1>
+        <div style="font-size:28px;letter-spacing:-0.01em;display:flex;gap:10px;align-items:baseline;height:36px">
+          <span style="color:var(--color-neutral-200)">Ven a</span>{{ wordEl }}
+        </div>
+        <div style="display:flex;gap:12px;pointer-events:auto;margin-top:8px">
+          <a href="#" class="btn btn-primary" style="font-size:17px;padding:13px 26px">Quiero unirme →</a>
+          <a href="#" class="btn btn-secondary" style="font-size:17px;padding:13px 26px">Ver logros</a>
+        </div>
+        <div style="display:flex;gap:28px;align-items:center;font-size:14px;color:var(--color-neutral-300);margin-top:12px">
+          <span><b style="color:var(--color-text);font-weight:500">5º</b> Campeonato de las Américas · Panamá 2025</span>
+          <span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent)"></span>
+          <span><b style="color:var(--color-text);font-weight:500">3</b> años compitiendo</span>
+          <span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent)"></span>
+          <span>WRO + Technoxian 2026</span>
+        </div>
+      </div>
+      <div style="position:absolute;bottom:24px;left:0;right:0;display:flex;flex-direction:column;align-items:center;gap:4px;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-neutral-400);pointer-events:none">
+        <span>Desliza</span><span style="animation:bob 1.6s ease-in-out infinite">↓</span>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="padding:64px;display:flex;flex-direction:column;gap:32px">
+  <div style="display:flex;flex-direction:column;gap:8px;max-width:720px">
+    <div style="font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-accent)">Ronda 1 · Hero + estructura</div>
+    <h2 style="margin:0">Arbi — JOIN ROBOTICS! · 3 direcciones</h2>
+    <p class="text-muted" style="margin:0;text-wrap:pretty">Mismo contenido, distinto punto de entrada. Debajo de cada hero, el orden de secciones propuesto. Elige una (o mezcla) y construyo la página completa, móvil, formulario multi-paso y confirmación.</p>
+  </div>
+  <div style="display:flex;flex-wrap:wrap;gap:48px;align-items:flex-start">
+
+    <!-- 1a -->
+    <div id="1a" style="display:flex;flex-direction:column;gap:12px">
+      <div style="display:flex;align-items:center;gap:10px"><span class="tag tag-outline">1a</span><span style="font-size:14px">Arena — foto a sangre, titular gigante</span></div>
+      <div style="width:1280px;height:820px;position:relative;overflow:hidden;border-radius:var(--radius-lg);background:var(--color-bg);box-shadow:var(--shadow-sm)">
+        <div class="lighten" style="position:absolute;inset:0"><img src="assets/ceremony.png" alt="" style="width:100%;height:100%;object-fit:cover;object-position:center 40%;opacity:0.85"></div>
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,var(--color-bg) 18%,transparent 70%)"></div>
+        <nav class="nav" style="position:relative;padding:24px 48px">
+          <span class="nav-brand">Arbi</span>
+          <a href="#">Quiénes somos</a><a href="#">Qué hacemos</a><a href="#">Logros</a><a href="#">Temporada</a><a href="#">FAQ</a>
+          <a href="#" class="btn btn-primary" style="color:var(--color-accent)">Únete</a>
+        </nav>
+        <div style="position:absolute;left:48px;bottom:56px;right:48px;display:flex;flex-direction:column;gap:20px">
+          <span class="tag tag-accent" style="align-self:flex-start">Reclutamiento 2026 abierto</span>
+          <h1 style="margin:0;font-size:132px;line-height:0.92;letter-spacing:-0.04em">JOIN<br>ROBOTICS!</h1>
+          <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:48px">
+            <p style="margin:0;font-size:20px;max-width:520px;text-wrap:pretty;color:var(--color-neutral-200)">Quedamos 5º en el Campeonato de las Américas. Esta temporada vamos por la WRO y Technoxian. No necesitas experiencia, solo ganas de competir.</p>
+            <div style="display:flex;gap:12px"><a href="#" class="btn btn-primary" style="font-size:16px;padding:12px 22px">Quiero unirme →</a><a href="#" class="btn btn-secondary" style="font-size:16px;padding:12px 22px">Ver logros</a></div>
+          </div>
+        </div>
+      </div>
+      <div style="width:1280px;display:flex;gap:8px;flex-wrap:wrap;font-size:12px" class="text-muted">
+        <span class="tag tag-neutral">Hero</span><span class="tag tag-neutral">Franja de stats</span><span class="tag tag-neutral">Quiénes somos</span><span class="tag tag-neutral">Qué hacemos</span><span class="tag tag-neutral">Logros</span><span class="tag tag-neutral">Temporada</span><span class="tag tag-neutral">FAQ</span><span class="tag tag-accent">Formulario</span>
+      </div>
+    </div>
+
+    <!-- 1b -->
+    <div id="1b" style="display:flex;flex-direction:column;gap:12px">
+      <div style="display:flex;align-items:center;gap:10px"><span class="tag tag-outline">1b</span><span style="font-size:14px">Split — el formulario empieza en el hero</span></div>
+      <div style="width:1280px;height:820px;position:relative;overflow:hidden;border-radius:var(--radius-lg);background:radial-gradient(ellipse at 15% 0%,var(--color-accent-900),var(--color-bg) 60%);box-shadow:var(--shadow-sm);display:flex;flex-direction:column">
+        <nav class="nav" style="padding:24px 48px">
+          <span class="nav-brand">Arbi</span>
+          <a href="#">Quiénes somos</a><a href="#">Qué hacemos</a><a href="#">Logros</a><a href="#">FAQ</a>
+        </nav>
+        <div style="flex:1;display:grid;grid-template-columns:minmax(0,1fr) 560px;gap:56px;padding:24px 48px 48px;align-items:center">
+          <div style="display:flex;flex-direction:column;gap:24px">
+            <h1 style="margin:0;font-size:88px;line-height:0.95;letter-spacing:-0.035em">JOIN<br>ROBOTICS!</h1>
+            <p style="margin:0;font-size:18px;max-width:460px;text-wrap:pretty;color:var(--color-neutral-200)">3 años compitiendo. 5º lugar en las Américas, Panamá 2025. Buscamos programadores, constructores y curiosos de primer año.</p>
+            <div style="display:flex;flex-direction:column;gap:12px;padding:20px;border-radius:var(--radius-md);background:var(--color-surface);box-shadow:var(--shadow-sm);max-width:520px">
+              <div style="display:flex;justify-content:space-between;font-size:12px"><span style="color:var(--color-accent)">Paso 1 de 3</span><span class="text-muted">Elige tu equipo</span></div>
+              <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px">
+                <div style="padding:14px;border-radius:var(--radius-md);box-shadow:inset 0 0 0 1px var(--color-accent);background:color-mix(in srgb,var(--color-accent) 10%,transparent);display:flex;flex-direction:column;gap:4px"><span style="font-size:15px;font-weight:500">Programación</span><span style="font-size:12px;color:var(--color-accent-300)">Visión, control, autónomo</span></div>
+                <div style="padding:14px;border-radius:var(--radius-md);box-shadow:inset 0 0 0 1px var(--color-divider);display:flex;flex-direction:column;gap:4px"><span style="font-size:15px;font-weight:500">Electrónica</span><span class="text-muted" style="font-size:12px">Sensores, circuitos</span></div>
+                <div style="padding:14px;border-radius:var(--radius-md);box-shadow:inset 0 0 0 1px var(--color-divider);display:flex;flex-direction:column;gap:4px"><span style="font-size:15px;font-weight:500">Mecánica</span><span class="text-muted" style="font-size:12px">Diseño, CAD, armado</span></div>
+              </div>
+              <a href="#" class="btn btn-primary btn-block" style="padding:10px">Continuar →</a>
+            </div>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:10px;height:100%;max-height:620px">
+            <div class="lighten" style="grid-column:1 / 3;border-radius:var(--radius-md);overflow:hidden"><img src="assets/team.png" alt="Equipo Arbi" style="width:100%;height:100%;object-fit:cover;object-position:center 60%"></div>
+            <div class="lighten" style="border-radius:var(--radius-md);overflow:hidden"><img src="assets/soldering.png" alt="" style="width:100%;height:100%;object-fit:cover"></div>
+            <div class="lighten" style="border-radius:var(--radius-md);overflow:hidden"><img src="assets/coding.png" alt="" style="width:100%;height:100%;object-fit:cover;object-position:center 45%"></div>
+          </div>
+        </div>
+      </div>
+      <div style="width:1280px;display:flex;gap:8px;flex-wrap:wrap">
+        <span class="tag tag-neutral">Hero + paso 1</span><span class="tag tag-neutral">Quiénes somos</span><span class="tag tag-neutral">Qué hacemos (por equipo)</span><span class="tag tag-neutral">Logros</span><span class="tag tag-neutral">Temporada</span><span class="tag tag-neutral">FAQ</span><span class="tag tag-accent">Formulario pasos 2–3</span>
+      </div>
+    </div>
+
+    <!-- 1c -->
+    <div id="1c" style="display:flex;flex-direction:column;gap:12px">
+      <div style="display:flex;align-items:center;gap:10px"><span class="tag tag-outline">1c</span><span style="font-size:14px">Marcador — el récord como titular</span></div>
+      <div style="width:1280px;height:820px;position:relative;overflow:hidden;border-radius:var(--radius-lg);background:var(--color-bg);box-shadow:var(--shadow-sm);display:flex;flex-direction:column">
+        <nav class="nav" style="padding:24px 48px">
+          <span class="nav-brand">Arbi</span>
+          <a href="#">Quiénes somos</a><a href="#">Logros</a><a href="#">Temporada</a><a href="#">FAQ</a>
+          <a href="#" class="btn btn-primary" style="color:var(--color-accent)">Únete</a>
+        </nav>
+        <div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;padding:40px 48px 0;flex:1">
+          <div style="display:flex;flex-direction:column;gap:20px;justify-content:center">
+            <div style="font-size:13px;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-accent)">Temporada 2026</div>
+            <h1 style="margin:0;font-size:96px;line-height:0.95;letter-spacing:-0.035em">JOIN ROBOTICS!</h1>
+            <p style="margin:0;font-size:18px;max-width:460px;text-wrap:pretty;color:var(--color-neutral-200)">El próximo puesto en el podio lo construyes tú. Sin experiencia previa: te enseñamos a programar, soldar y competir.</p>
+            <div style="display:flex;gap:12px"><a href="#" class="btn btn-primary" style="font-size:16px;padding:12px 22px">Quiero unirme →</a></div>
+          </div>
+          <div class="lighten" style="position:relative;border-radius:var(--radius-md);overflow:hidden;align-self:stretch;max-height:440px"><img src="assets/arena.png" alt="" style="width:100%;height:100%;object-fit:cover;object-position:60% center"></div>
+        </div>
+        <div style="margin-top:40px;background:radial-gradient(ellipse at 20% 0%,var(--color-section-glow),var(--color-section) 70%);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));padding:36px 48px;gap:40px">
+          <div style="display:flex;flex-direction:column;gap:4px"><span style="font-size:72px;line-height:1;letter-spacing:-0.04em;font-weight:500">5º</span><span style="font-size:15px;color:var(--color-neutral-200)">Campeonato de las Américas · Panamá 2025</span></div>
+          <div style="display:flex;flex-direction:column;gap:4px"><span style="font-size:72px;line-height:1;letter-spacing:-0.04em;font-weight:500">3</span><span style="font-size:15px;color:var(--color-neutral-200)">Años compitiendo</span></div>
+          <div style="display:flex;flex-direction:column;gap:4px"><span style="font-size:72px;line-height:1;letter-spacing:-0.04em;font-weight:500">2</span><span style="font-size:15px;color:var(--color-neutral-200)">Competencias en 2026: WRO y Technoxian</span></div>
+        </div>
+      </div>
+      <div style="width:1280px;display:flex;gap:8px;flex-wrap:wrap">
+        <span class="tag tag-neutral">Hero + marcador</span><span class="tag tag-neutral">Temporada (línea de tiempo)</span><span class="tag tag-neutral">Qué hacemos</span><span class="tag tag-neutral">Quiénes somos</span><span class="tag tag-neutral">FAQ</span><span class="tag tag-accent">Formulario</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;speed&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:1,&quot;min&quot;:0.25,&quot;max&quot;:3,&quot;step&quot;:0.25,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Animación&quot;},&quot;parallax&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Animación&quot;},&quot;showGears&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Capas&quot;},&quot;showCad&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Capas&quot;},&quot;showCode&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Capas&quot;},&quot;showCircuits&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Capas&quot;}}">
+class Component extends DCLogic {
+  state = { w: 0 };
+  words = ['programar', 'soldar', 'diseñar en CAD', 'competir', 'ganar'];
+  layers = [];
+  componentDidMount() { this.t = setInterval(() => this.setState(s => ({ w: (s.w + 1) % this.words.length })), 2000); }
+  componentWillUnmount() { clearInterval(this.t); }
+  onMove = e => {
+    if (this.props.parallax === false) return;
+    const r = e.currentTarget.getBoundingClientRect();
+    const x = (e.clientX - r.left) / r.width - 0.5, y = (e.clientY - r.top) / r.height - 0.5;
+    this.layers.forEach(l => { if (l && l[0]) l[0].style.transform = `translate(${-x * l[1]}px,${-y * l[1]}px)`; });
+  };
+  onLeave = () => this.layers.forEach(l => { if (l && l[0]) l[0].style.transform = ''; });
+
+  buildBg() {
+    const h = React.createElement, p = this.props;
+    const s = Math.max(0.1, p.speed ?? 1);
+    const on = k => p[k] !== false;
+    const layer = (i, depth, opacity, ...kids) => h('div', { key: 'L' + i, ref: el => { this.layers[i] = [el, depth]; }, style: { position: 'absolute', inset: -40, transition: 'transform .5s ease-out', opacity, pointerEvents: 'none' } }, h('div', { style: { position: 'absolute', left: 40, top: 40, width: 1280, height: 820 } }, ...kids));
+    const out = [];
+
+    out.push(layer(0, 6, 1,
+      h('div', { key: 'g', style: { position: 'absolute', inset: 0, backgroundImage: 'linear-gradient(var(--color-neutral-800) 1px,transparent 1px),linear-gradient(90deg,var(--color-neutral-800) 1px,transparent 1px)', backgroundSize: '48px 48px', animation: `gridpan ${8 / s}s linear infinite`, opacity: 0.55, maskImage: 'radial-gradient(ellipse at center,transparent 25%,#000 80%)', WebkitMaskImage: 'radial-gradient(ellipse at center,transparent 25%,#000 80%)' } }),
+      h('div', { key: 's', style: { position: 'absolute', left: 0, right: 0, top: 0, height: 1, background: 'linear-gradient(90deg,transparent,var(--color-accent),transparent)', opacity: 0.35, animation: `scan ${9 / s}s linear infinite` } })
+    ));
+
+    if (on('showGears')) {
+      const gear = (key, cx, cy, teeth, ro, ri, dur, rev, stroke, sw) => {
+        const st = 2 * Math.PI / teeth; let d = '';
+        for (let i = 0; i < teeth; i++) {
+          const a = i * st;
+          [[ri, a], [ro, a + st * 0.18], [ro, a + st * 0.42], [ri, a + st * 0.6]].forEach(([r, t], j) => {
+            d += (i === 0 && j === 0 ? 'M' : 'L') + (cx + r * Math.cos(t)).toFixed(1) + ' ' + (cy + r * Math.sin(t)).toFixed(1) + ' ';
+          });
+        }
+        d += 'Z';
+        const ln = { fill: 'none', stroke, strokeWidth: sw };
+        const spokes = [0, 1, 2, 3, 4].map(k => { const t = k * 2 * Math.PI / 5; return h('circle', { key: k, cx: cx + ri * 0.52 * Math.cos(t), cy: cy + ri * 0.52 * Math.sin(t), r: ri * 0.15, style: ln }); });
+        return h('g', { key, style: { transformBox: 'fill-box', transformOrigin: 'center', animation: `spin ${dur / s}s linear infinite${rev ? ' reverse' : ''}` } },
+          h('circle', { cx, cy, r: ro + 1, style: { fill: 'none', stroke: 'none' } }),
+          h('path', { d, style: ln }),
+          h('circle', { cx, cy, r: ri * 0.84, style: ln }),
+          h('circle', { cx, cy, r: ri * 0.2, style: ln }),
+          ...spokes);
+      };
+      out.push(layer(1, 22, 0.75, h('svg', { key: 'gs', width: 1280, height: 820, style: { position: 'absolute', inset: 0, overflow: 'visible' } },
+        gear('a', 70, 90, 24, 180, 160, 40, false, 'var(--color-neutral-600)', 1.5),
+        gear('b', 262, 282, 12, 92, 74, 20, true, 'var(--color-accent)', 1.25),
+        gear('c', 1300, 470, 18, 130, 114, 32, true, 'var(--color-neutral-600)', 1.5),
+        gear('d', 360, 140, 8, 34, 26, 10, false, 'var(--color-neutral-700)', 1.25)
+      )));
+    }
+
+    if (on('showCad')) {
+      const face = (sz, tf, k) => h('div', { key: k, style: { position: 'absolute', inset: 0, transform: `${tf} translateZ(${sz / 2}px)`, border: '1px solid var(--color-accent)', background: 'color-mix(in srgb,var(--color-accent) 5%,transparent)' } });
+      const cube = (sz, anim, k) => h('div', { key: k, style: { position: 'absolute', left: 130 - sz / 2, top: 130 - sz / 2, width: sz, height: sz, transformStyle: 'preserve-3d', animation: anim } },
+        ['rotateY(0deg)', 'rotateY(90deg)', 'rotateY(180deg)', 'rotateY(-90deg)', 'rotateX(90deg)', 'rotateX(-90deg)'].map((t, i) => face(sz, t, i)));
+      const mono = { fontFamily: 'var(--font-mono, ui-monospace, monospace)', fontSize: 11, fill: 'var(--color-neutral-400)' };
+      const dim = { stroke: 'var(--color-neutral-500)', strokeWidth: 1, fill: 'none' };
+      out.push(layer(2, 30, 0.8, h('div', { key: 'cad', style: { position: 'absolute', left: 960, top: 90, width: 260, height: 260 } },
+        h('div', { style: { position: 'absolute', inset: 0, perspective: '700px' } },
+          h('div', { style: { position: 'absolute', inset: 0, transformStyle: 'preserve-3d' } },
+            cube(120, `cad ${24 / s}s linear infinite`, 'o'),
+            cube(52, `cad2 ${14 / s}s linear infinite`, 'i'))),
+        h('svg', { width: 260, height: 260, style: { position: 'absolute', inset: 0, overflow: 'visible' } },
+          h('line', { x1: 130, y1: 0, x2: 130, y2: 260, style: { ...dim, strokeDasharray: '4 6', opacity: 0.6 } }),
+          h('line', { x1: 0, y1: 130, x2: 260, y2: 130, style: { ...dim, strokeDasharray: '4 6', opacity: 0.6 } }),
+          h('path', { d: 'M40 246 H220 M40 240 V252 M220 240 V252', style: dim }),
+          h('text', { x: 130, y: 240, textAnchor: 'middle', style: mono }, '180.00 mm'),
+          h('path', { d: 'M248 40 V220 M242 40 H254 M242 220 H254', style: dim }),
+          h('text', { x: 256, y: 134, style: mono }, '180.00'),
+          h('text', { x: 0, y: 10, style: { ...mono, fill: 'var(--color-accent-300)' } }, 'CHASIS_v3.step'),
+          h('text', { x: 0, y: 26, style: mono }, 'ISO · 1:4 · PLA')
+        ))));
+    }
+
+    if (on('showCode')) {
+      const lines = ['// arbi_bot · WRO 2026', '#include <Arbi.h>', '', 'PID pid(1.2, 0.01, 0.4);', 'Motor L(PORT_A), R(PORT_B);', '', 'void setup() {', '  cam.begin(320, 240);', '  gyro.calibrate();', '}', '', 'void loop() {', '  float err = line.read() - 0.5;', '  float u = pid.update(err);', '  L.speed(BASE + u);', '  R.speed(BASE - u);', '  if (cam.sees(RED)) turn(90);', '  if (dist.cm() < 8) grab();', '}', '', '// misión: 5º → 1º', ''];
+      const row = (t, i) => h('div', { key: i, style: { display: 'flex', gap: 16, whiteSpace: 'pre' } },
+        h('span', { style: { color: 'var(--color-neutral-700)', width: 20, textAlign: 'right' } }, String(i % lines.length + 1)),
+        h('span', { style: { color: t.trim().startsWith('//') ? 'var(--color-accent-300)' : t.startsWith('#') ? 'var(--color-accent-400)' : 'var(--color-neutral-500)' } }, t));
+      out.push(layer(3, 14, 0.7, h('div', { key: 'code', style: { position: 'absolute', left: 40, top: 400, width: 210, height: 380, overflow: 'hidden', fontFamily: 'var(--font-mono, ui-monospace, monospace)', fontSize: 12, lineHeight: '21px', maskImage: 'linear-gradient(transparent,#000 25%,#000 70%,transparent),linear-gradient(90deg,#000 60%,transparent)', WebkitMaskImage: 'linear-gradient(transparent,#000 25%,#000 70%,transparent),linear-gradient(90deg,#000 60%,transparent)', maskComposite: 'intersect', WebkitMaskComposite: 'source-in' } },
+        h('div', { style: { animation: `scrollUp ${22 / s}s linear infinite` } }, [...lines, ...lines].map(row)))));
+    }
+
+    if (on('showCircuits')) {
+      const traces = ['M800 830 V780 L830 750 H980 L1010 720 H1060', 'M870 830 V800 H1030 L1046 784 V744 H1060', 'M1140 716 H1180 L1210 686 V600 L1240 570 H1290', 'M1140 740 H1200 L1230 770 H1290', 'M1100 700 V640 L1120 620 H1170', 'M1080 756 V800 L1100 830'];
+      const base = { fill: 'none', stroke: 'var(--color-neutral-700)', strokeWidth: 2, strokeLinejoin: 'round' };
+      const kids = [];
+      traces.forEach((d, i) => {
+        kids.push(h('path', { key: 'b' + i, d, style: base }));
+        kids.push(h('path', { key: 'p' + i, d, pathLength: 100, style: { fill: 'none', stroke: 'var(--color-accent)', strokeWidth: 2, strokeLinecap: 'round', strokeDasharray: '7 93', animation: `trace ${(2.4 + i * 0.4) / s}s linear infinite`, animationDelay: `${-i * 0.7}s`, filter: 'drop-shadow(0 0 4px var(--color-accent))' } }));
+      });
+      [[720, 1060], [744, 1060], [716, 1140], [740, 1140]].forEach(([y, x], i) => kids.push(h('circle', { key: 'pin' + i, cx: x, cy: y, r: 3, style: { fill: 'var(--color-neutral-600)' } })));
+      kids.push(h('circle', { key: 'pad', cx: 1170, cy: 620, r: 6, style: { fill: 'none', stroke: 'var(--color-accent)', strokeWidth: 2, animation: `padpulse ${1.6 / s}s ease-in-out infinite` } }));
+      kids.push(h('rect', { key: 'chip', x: 1060, y: 700, width: 80, height: 56, rx: 4, style: { fill: 'var(--color-surface)', stroke: 'var(--color-neutral-600)', strokeWidth: 1.5 } }));
+      kids.push(h('text', { key: 'lbl', x: 1100, y: 733, textAnchor: 'middle', style: { fontFamily: 'var(--font-mono, ui-monospace, monospace)', fontSize: 11, fill: 'var(--color-neutral-400)' } }, 'ARB-01'));
+      kids.push(h('circle', { key: 'led', cx: 1126, cy: 712, r: 2.5, style: { fill: 'var(--color-accent)', animation: `blink ${1 / s}s steps(1) infinite` } }));
+      out.push(layer(4, 18, 0.9, h('svg', { key: 'cs', width: 1280, height: 820, style: { position: 'absolute', inset: 0, overflow: 'visible' } }, ...kids)));
+    }
+    return out;
+  }
+
+  renderVals() {
+    const p = this.props;
+    const key = JSON.stringify([p.speed, p.showGears, p.showCad, p.showCode, p.showCircuits]);
+    if (this._k !== key) { this._k = key; this.layers = []; this._bg = this.buildBg(); }
+    const word = this.words[this.state.w];
+    return {
+      bg: this._bg,
+      wordEl: React.createElement('span', { key: word, style: { display: 'inline-block', color: 'var(--color-accent-300)', fontWeight: 500, animation: 'wordin .45s ease-out' } }, word, React.createElement('span', { style: { animation: 'blink 1s steps(1) infinite', color: 'var(--color-accent)' } }, '_')),
+      onMove: this.onMove,
+      onLeave: this.onLeave
+    };
+  }
+}
+</script>
+</body>
+</html>

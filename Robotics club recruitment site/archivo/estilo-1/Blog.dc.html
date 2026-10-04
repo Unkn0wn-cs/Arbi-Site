@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/nocturne-463e0dc1-8fad-4a8f-b830-c6d6be16875f/styles.css">
+<script src="_ds/nocturne-463e0dc1-8fad-4a8f-b830-c6d6be16875f/_ds_bundle.js"></script>
+<script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+<style>html{scroll-behavior:smooth}body{margin:0;background:var(--color-bg)} a{color:var(--color-accent)} a:hover{color:var(--color-accent-300)}</style>
+</helmet>
+<div style="background:var(--color-bg);color:var(--color-text);overflow-x:hidden">
+<dc-import name="SiteNav" active="blog" hint-size="100%,0px"></dc-import>
+
+<header data-screen-label="Blog · Encabezado" style="position:relative;overflow:hidden;padding:clamp(120px,13vw,160px) clamp(20px,5vw,64px) clamp(32px,4vw,48px);background:radial-gradient(ellipse at 85% 0%,var(--color-accent-900),transparent 55%)">
+  <div style="position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(var(--color-neutral-800) 1px,transparent 1px),linear-gradient(90deg,var(--color-neutral-800) 1px,transparent 1px);background-size:48px 48px;opacity:0.4;mask-image:radial-gradient(ellipse at 80% 0%,#000,transparent 60%);-webkit-mask-image:radial-gradient(ellipse at 80% 0%,#000,transparent 60%)"></div>
+  <div data-reveal="0" style="position:relative;max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px">
+    <div style="display:flex;flex-direction:column;gap:18px">
+      <div style="display:flex;align-items:center;gap:12px;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--color-neutral-300)"><span style="width:32px;height:1px;background:var(--color-accent)"></span><span>Blog</span></div>
+      <h1 style="margin:0;font-size:clamp(56px,9vw,128px);line-height:0.9;letter-spacing:-0.045em;font-weight:500">Desde el taller.</h1>
+      <p style="margin:0;font-size:clamp(16px,1.6vw,19px);line-height:1.55;color:var(--color-neutral-200);max-width:520px;text-wrap:pretty">Competencias, talleres y el día a día del equipo. Todo lo publicamos en Instagram.</p>
+    </div>
+    <a href="https://instagram.com/" target="_blank" class="btn btn-primary" style="padding:12px 20px;font-size:15px;display:inline-flex;gap:8px;align-items:center;min-height:44px"><i class="ph ph-instagram-logo" style="font-size:18px"></i>Seguir en Instagram</a>
+  </div>
+</header>
+
+<section data-screen-label="Publicaciones" style="padding:0 clamp(20px,5vw,64px) clamp(40px,5vw,64px)">
+  <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:14px">
+    <a data-reveal="1" href="https://instagram.com/" target="_blank" style="grid-column:1 / -1;position:relative;display:block;height:clamp(320px,38vw,480px);border-radius:var(--radius-lg);overflow:hidden;text-decoration:none;color:var(--color-text)" style-hover="box-shadow:inset 0 0 0 1px var(--color-accent-700)">
+      <div class="lighten" style="position:absolute;inset:0"><img src="assets/ceremony.png" alt="" style="width:100%;height:100%;object-fit:cover;object-position:center 35%"></div>
+      <div style="position:absolute;inset:0;background:linear-gradient(to top,var(--color-bg) 6%,transparent 60%)"></div>
+      <div style="position:absolute;left:clamp(18px,3vw,32px);right:clamp(18px,3vw,32px);bottom:clamp(18px,3vw,32px);display:flex;flex-direction:column;gap:10px;max-width:640px">
+        <span class="tag tag-accent" style="align-self:flex-start">Competencias</span>
+        <span style="font-size:clamp(26px,3.4vw,44px);line-height:1.02;letter-spacing:-0.03em;font-weight:500">Así vivimos el Campeonato de las Américas en Panamá</span>
+        <span style="font-size:14px;color:var(--color-accent-200);display:inline-flex;gap:6px;align-items:center">Ver en Instagram <i class="ph ph-arrow-up-right"></i></span>
+      </div>
+    </a>
+    <a data-reveal="1" href="https://instagram.com/" target="_blank" class="card" style="padding:12px;gap:12px;text-decoration:none;color:var(--color-text);transition:transform .25s ease" style-hover="transform:translateY(-4px)">
+      <div class="lighten" style="height:220px;border-radius:var(--radius-md);overflow:hidden"><img src="assets/team.png" alt="" style="width:100%;height:100%;object-fit:cover;object-position:center 60%"></div>
+      <div style="display:flex;flex-direction:column;gap:8px;padding:4px 8px 8px"><span class="tag tag-neutral" style="align-self:flex-start">Equipo</span><span style="font-size:18px;font-weight:500;letter-spacing:-0.01em">Conoce al equipo Arbi</span><span style="font-size:13px;color:var(--color-accent-300);display:inline-flex;gap:6px;align-items:center">Ver en Instagram <i class="ph ph-arrow-up-right"></i></span></div>
+    </a>
+    <a data-reveal="2" href="https://instagram.com/" target="_blank" class="card" style="padding:12px;gap:12px;text-decoration:none;color:var(--color-text);transition:transform .25s ease" style-hover="transform:translateY(-4px)">
+      <div class="lighten" style="height:220px;border-radius:var(--radius-md);overflow:hidden"><img src="assets/soldering.png" alt="" style="width:100%;height:100%;object-fit:cover"></div>
+      <div style="display:flex;flex-direction:column;gap:8px;padding:4px 8px 8px"><span class="tag tag-neutral" style="align-self:flex-start">Taller</span><span style="font-size:18px;font-weight:500;letter-spacing:-0.01em">Dentro del taller de electrónica</span><span style="font-size:13px;color:var(--color-accent-300);display:inline-flex;gap:6px;align-items:center">Ver en Instagram <i class="ph ph-arrow-up-right"></i></span></div>
+    </a>
+    <a data-reveal="3" href="https://instagram.com/" target="_blank" class="card" style="padding:12px;gap:12px;text-decoration:none;color:var(--color-text);transition:transform .25s ease" style-hover="transform:translateY(-4px)">
+      <div class="lighten" style="height:220px;border-radius:var(--radius-md);overflow:hidden"><img src="assets/coding.png" alt="" style="width:100%;height:100%;object-fit:cover;object-position:center 45%"></div>
+      <div style="display:flex;flex-direction:column;gap:8px;padding:4px 8px 8px"><span class="tag tag-neutral" style="align-self:flex-start">Programación</span><span style="font-size:18px;font-weight:500;letter-spacing:-0.01em">Programando a pie de pista</span><span style="font-size:13px;color:var(--color-accent-300);display:inline-flex;gap:6px;align-items:center">Ver en Instagram <i class="ph ph-arrow-up-right"></i></span></div>
+    </a>
+    <a data-reveal="1" href="https://instagram.com/" target="_blank" class="card" style="padding:12px;gap:12px;text-decoration:none;color:var(--color-text);transition:transform .25s ease" style-hover="transform:translateY(-4px)">
+      <div class="lighten" style="height:220px;border-radius:var(--radius-md);overflow:hidden"><img src="assets/arena.png" alt="" style="width:100%;height:100%;object-fit:cover;object-position:60% center"></div>
+      <div style="display:flex;flex-direction:column;gap:8px;padding:4px 8px 8px"><span class="tag tag-neutral" style="align-self:flex-start">Competencias</span><span style="font-size:18px;font-weight:500;letter-spacing:-0.01em">Rondas en la pista</span><span style="font-size:13px;color:var(--color-accent-300);display:inline-flex;gap:6px;align-items:center">Ver en Instagram <i class="ph ph-arrow-up-right"></i></span></div>
+    </a>
+    <a data-reveal="2" href="Join Robotics.dc.html#unete" style="border-radius:var(--radius-md);padding:24px;display:flex;flex-direction:column;justify-content:space-between;gap:24px;min-height:300px;text-decoration:none;color:var(--color-text);box-shadow:inset 0 0 0 1px var(--color-accent-700);background:radial-gradient(ellipse at 0% 100%,var(--color-accent-900),transparent 70%)" style-hover="box-shadow:inset 0 0 0 1px var(--color-accent)">
+      <span class="tag tag-accent" style="align-self:flex-start">Inscripciones abiertas</span>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <span style="font-size:clamp(36px,4vw,52px);line-height:0.92;letter-spacing:-0.04em;font-weight:500"><span style="color:transparent;-webkit-text-stroke:1.5px var(--color-accent)">JOIN</span><br>ROBOTICS!</span>
+        <span style="font-size:15px;color:var(--color-accent-200);display:inline-flex;gap:6px;align-items:center">Inscríbete en 2 minutos <i class="ph ph-arrow-right"></i></span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<dc-import name="SiteFooter" hint-size="100%,420px"></dc-import>
+</div>
+</x-dc>
+</body>
+</html>

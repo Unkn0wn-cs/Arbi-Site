@@ -1,0 +1,42 @@
+/* Arbi palette — overrides Nocturne tokens: warm graphite ground, signal orange + circuit cyan */
+:root {
+  --color-bg: #101315;
+  --color-surface: #191d20;
+  --color-text: #efeae2;
+  --color-accent: #ff7a3d;
+  --color-accent-2: #4fd1e0;
+  --color-divider: color-mix(in srgb, #efeae2 14%, transparent);
+  --color-neutral-100: #f4f1ec;
+  --color-neutral-200: #e3dfd8;
+  --color-neutral-300: #c9c6c0;
+  --color-neutral-400: #a9a8a4;
+  --color-neutral-500: #8a8b89;
+  --color-neutral-600: #6c6f70;
+  --color-neutral-700: #4f5356;
+  --color-neutral-800: #363a3d;
+  --color-neutral-900: #24272a;
+  --color-accent-100: #fff1e8;
+  --color-accent-200: #ffdcc7;
+  --color-accent-300: #ffbe98;
+  --color-accent-400: #ff9c63;
+  --color-accent-500: #ff7a3d;
+  --color-accent-600: #d95e26;
+  --color-accent-700: #a9461a;
+  --color-accent-800: #6e2e13;
+  --color-accent-900: #3a1b0f;
+  --color-accent-2-100: #e6fbfd;
+  --color-accent-2-200: #c4f3f8;
+  --color-accent-2-300: #93e7f0;
+  --color-accent-2-400: #5ad6e4;
+  --color-accent-2-500: #2fbfd0;
+  --color-accent-2-600: #2399a8;
+  --color-accent-2-700: #1c7380;
+  --color-accent-2-800: #144d56;
+  --color-accent-2-900: #0d2d33;
+  --color-section: #0e2a30;
+  --color-section-glow: #17505a;
+  --color-section-ghost: #2a6b76;
+  --shadow-sm: 0 0 0 1px #363a3d;
+  --shadow-md: 0 0 0 1px #4f5356, 0 6px 18px rgba(0,0,0,0.55);
+  --shadow-lg: 0 0 0 1px #8a8b89, 0 16px 40px rgba(0,0,0,0.65);
+}
