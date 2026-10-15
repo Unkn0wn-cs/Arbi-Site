@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Join Robotics! · Arbi — Robótica competitiva · Unimet</title>
+<meta name="description" content="Inscripcbiones abiertas en Arbi, el club de robótica competitiva de la Universidad Metropolitana. Sin experiencia previa, de cualquier carrera. 5º en el Campeonato de las Américas · Panamá 2025.">
+<meta name="theme-color" content="#101315">
+<script>
+  // Flags for CSS: .js = scripts run; .reveal-on = scroll-reveal animations are enabled (see site.css).
+  (function (d) {
+    d.classList.add('js');
+    if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) d.classList.add('reveal-on');
+  })(document.documentElement);
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="css/nocturne.css">
+<link rel="stylesheet" href="css/arbi-palette.css">
+<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/home.css">
+<script src="js/site.js" defer></script>
+<script src="js/hero.js" defer></script>
+<script src="js/join.js" defer></script>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <!-- Phosphor Icons (MIT) · https://phosphoricons.com · regular weight -->
+  <symbol id="ph-airplane-tilt" viewBox="0 0 256 256"><path d="M185.33,114.21l29.14-27.42.17-.17a32,32,0,0,0-45.26-45.26c0,.06-.11.11-.17.17L141.79,70.67l-83-30.2a8,8,0,0,0-8.39,1.86l-24,24a8,8,0,0,0,1.22,12.31l63.89,42.59L76.69,136H56a8,8,0,0,0-5.65,2.34l-24,24A8,8,0,0,0,29,175.42l36.82,14.73,14.7,36.75.06.16a8,8,0,0,0,13.18,2.47l23.87-23.88A8,8,0,0,0,120,200V179.31l14.76-14.76,42.59,63.89a8,8,0,0,0,12.31,1.22l24-24a8,8,0,0,0,1.86-8.39Zm-.07,97.23-42.59-63.88A8,8,0,0,0,136.8,144c-.27,0-.53,0-.79,0a8,8,0,0,0-5.66,2.35l-24,24A8,8,0,0,0,104,176v20.69L90.93,209.76,79.43,181A8,8,0,0,0,75,176.57l-28.74-11.5L59.32,152H80a8,8,0,0,0,5.66-2.34l24-24a8,8,0,0,0-1.22-12.32L44.56,70.74l13.5-13.49,83.22,30.26a8,8,0,0,0,8.56-2L180.78,52.6A16,16,0,0,1,203.4,75.23l-32.87,30.93a8,8,0,0,0-2,8.56l30.26,83.22Z"/></symbol>
+  <symbol id="ph-arrow-right" viewBox="0 0 256 256"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></symbol>
+  <symbol id="ph-calendar-blank" viewBox="0 0 256 256"><path d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Z"/></symbol>
+  <symbol id="ph-calendar-plus" viewBox="0 0 256 256"><path d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Zm-48-56a8,8,0,0,1-8,8H136v16a8,8,0,0,1-16,0V160H104a8,8,0,0,1,0-16h16V128a8,8,0,0,1,16,0v16h16A8,8,0,0,1,160,152Z"/></symbol>
+  <symbol id="ph-check" viewBox="0 0 256 256"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></symbol>
+  <symbol id="ph-check-circle" viewBox="0 0 256 256"><path d="M173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34ZM232,128A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"/></symbol>
+  <symbol id="ph-discord-logo" viewBox="0 0 256 256"><path d="M104,140a12,12,0,1,1-12-12A12,12,0,0,1,104,140Zm60-12a12,12,0,1,0,12,12A12,12,0,0,0,164,128Zm74.45,64.9-67,29.71a16.17,16.17,0,0,1-21.71-9.1l-8.11-22q-6.72.45-13.63.46t-13.63-.46l-8.11,22a16.18,16.18,0,0,1-21.71,9.1l-67-29.71a15.93,15.93,0,0,1-9.06-18.51L38,58A16.07,16.07,0,0,1,51,46.14l36.06-5.93a16.22,16.22,0,0,1,18.26,11.88l3.26,12.84Q118.11,64,128,64t19.4.93l3.26-12.84a16.21,16.21,0,0,1,18.26-11.88L205,46.14A16.07,16.07,0,0,1,218,58l29.53,116.38A15.93,15.93,0,0,1,238.45,192.9ZM232,178.28,202.47,62s0,0-.08,0L166.33,56a.17.17,0,0,0-.17,0l-2.83,11.14c5,.94,10,2.06,14.83,3.42A8,8,0,0,1,176,86.31a8.09,8.09,0,0,1-2.16-.3A172.25,172.25,0,0,0,128,80a172.25,172.25,0,0,0-45.84,6,8,8,0,1,1-4.32-15.4c4.82-1.36,9.78-2.48,14.82-3.42L89.83,56s0,0-.12,0h0L53.61,61.93a.17.17,0,0,0-.09,0L24,178.33,91,208a.23.23,0,0,0,.22,0L98,189.72a173.2,173.2,0,0,1-20.14-4.32A8,8,0,0,1,82.16,170,171.85,171.85,0,0,0,128,176a171.85,171.85,0,0,0,45.84-6,8,8,0,0,1,4.32,15.41A173.2,173.2,0,0,1,158,189.72L164.75,208a.22.22,0,0,0,.21,0Z"/></symbol>
+  <symbol id="ph-envelope-simple" viewBox="0 0 256 256"><path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z"/></symbol>
+  <symbol id="ph-graduation-cap" viewBox="0 0 256 256"><path d="M251.76,88.94l-120-64a8,8,0,0,0-7.52,0l-120,64a8,8,0,0,0,0,14.12L32,117.87v48.42a15.91,15.91,0,0,0,4.06,10.65C49.16,191.53,78.51,216,128,216a130,130,0,0,0,48-8.76V240a8,8,0,0,0,16,0V199.51a115.63,115.63,0,0,0,27.94-22.57A15.91,15.91,0,0,0,224,166.29V117.87l27.76-14.81a8,8,0,0,0,0-14.12ZM128,200c-43.27,0-68.72-21.14-80-33.71V126.4l76.24,40.66a8,8,0,0,0,7.52,0L176,143.47v46.34C163.4,195.69,147.52,200,128,200Zm80-33.75a97.83,97.83,0,0,1-16,14.25V134.93l16-8.53ZM188,118.94l-.22-.13-56-29.87a8,8,0,0,0-7.52,14.12L171,128l-43,22.93L25,96,128,41.07,231,96Z"/></symbol>
+  <symbol id="ph-instagram-logo" viewBox="0 0 256 256"><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"/></symbol>
+  <symbol id="ph-list" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"/></symbol>
+  <symbol id="ph-minus" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128Z"/></symbol>
+  <symbol id="ph-plus" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"/></symbol>
+  <symbol id="ph-robot" viewBox="0 0 256 256"><path d="M200,48H136V16a8,8,0,0,0-16,0V48H56A32,32,0,0,0,24,80V192a32,32,0,0,0,32,32H200a32,32,0,0,0,32-32V80A32,32,0,0,0,200,48Zm16,144a16,16,0,0,1-16,16H56a16,16,0,0,1-16-16V80A16,16,0,0,1,56,64H200a16,16,0,0,1,16,16Zm-52-56H92a28,28,0,0,0,0,56h72a28,28,0,0,0,0-56Zm-24,16v24H116V152ZM80,164a12,12,0,0,1,12-12h8v24H92A12,12,0,0,1,80,164Zm84,12h-8V152h8a12,12,0,0,1,0,24ZM72,108a12,12,0,1,1,12,12A12,12,0,0,1,72,108Zm88,0a12,12,0,1,1,12,12A12,12,0,0,1,160,108Z"/></symbol>
+  <symbol id="ph-trophy" viewBox="0 0 256 256"><path d="M232,64H208V48a8,8,0,0,0-8-8H56a8,8,0,0,0-8,8V64H24A16,16,0,0,0,8,80V96a40,40,0,0,0,40,40h3.65A80.13,80.13,0,0,0,120,191.61V216H96a8,8,0,0,0,0,16h64a8,8,0,0,0,0-16H136V191.58c31.94-3.23,58.44-25.64,68.08-55.58H208a40,40,0,0,0,40-40V80A16,16,0,0,0,232,64ZM48,120A24,24,0,0,1,24,96V80H48v32q0,4,.39,8Zm144-8.9c0,35.52-29,64.64-64,64.9a64,64,0,0,1-64-64V56H192ZM232,96a24,24,0,0,1-24,24h-.5a81.81,81.81,0,0,0,.5-8.9V80h24Z"/></symbol>
+  <symbol id="ph-users-three" viewBox="0 0 256 256"><path d="M244.8,150.4a8,8,0,0,1-11.2-1.6A51.6,51.6,0,0,0,192,128a8,8,0,0,1-7.37-4.89,8,8,0,0,1,0-6.22A8,8,0,0,1,192,112a24,24,0,1,0-23.24-30,8,8,0,1,1-15.5-4A40,40,0,1,1,219,117.51a67.94,67.94,0,0,1,27.43,21.68A8,8,0,0,1,244.8,150.4ZM190.92,212a8,8,0,1,1-13.84,8,57,57,0,0,0-98.16,0,8,8,0,1,1-13.84-8,72.06,72.06,0,0,1,33.74-29.92,48,48,0,1,1,58.36,0A72.06,72.06,0,0,1,190.92,212ZM128,176a32,32,0,1,0-32-32A32,32,0,0,0,128,176ZM72,120a8,8,0,0,0-8-8A24,24,0,1,1,87.24,82a8,8,0,1,0,15.5-4A40,40,0,1,0,37,117.51,67.94,67.94,0,0,0,9.6,139.19a8,8,0,1,0,12.8,9.61A51.6,51.6,0,0,1,64,128,8,8,0,0,0,72,120Z"/></symbol>
+  <symbol id="ph-whatsapp-logo" viewBox="0 0 256 256"><path d="M187.58,144.84l-32-16a8,8,0,0,0-8,.5l-14.69,9.8a40.55,40.55,0,0,1-16-16l9.8-14.69a8,8,0,0,0,.5-8l-16-32A8,8,0,0,0,104,64a40,40,0,0,0-40,40,88.1,88.1,0,0,0,88,88,40,40,0,0,0,40-40A8,8,0,0,0,187.58,144.84ZM152,176a72.08,72.08,0,0,1-72-72A24,24,0,0,1,99.29,80.46l11.48,23L101,118a8,8,0,0,0-.73,7.51,56.47,56.47,0,0,0,30.15,30.15A8,8,0,0,0,138,155l14.61-9.74,23,11.48A24,24,0,0,1,152,176ZM128,24A104,104,0,0,0,36.18,176.88L24.83,210.93a16,16,0,0,0,20.24,20.24l34.05-11.35A104,104,0,1,0,128,24Zm0,192a87.87,87.87,0,0,1-44.06-11.81,8,8,0,0,0-6.54-.67L40,216,52.47,178.6a8,8,0,0,0-.66-6.54A88,88,0,1,1,128,216Z"/></symbol>
+  <symbol id="ph-x" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"/></symbol>
+  <symbol id="ph-warning-circle" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm-8-80V80a8,8,0,0,1,16,0v56a8,8,0,0,1-16,0Zm20,36a12,12,0,1,1-12-12A12,12,0,0,1,140,172Z"/></symbol>
+</svg>
+<a class="skip-link" href="#main">Saltar al contenido</a>
+<div class="page">
+
+<header class="site-header">
+  <nav class="site-nav" aria-label="Principal" data-nav>
+    <a class="site-nav-brand" href="#"><span class="brand-mark"></span>Arbi</a>
+    <ul class="site-nav-links">
+      <li><a href="quienes-somos.html">Quiénes somos</a></li>
+      <li><a href="trayectoria.html">Trayectoria</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <a class="btn btn-primary site-nav-cta" href="#unete">Únete</a>
+    <button type="button" class="btn btn-ghost btn-icon site-nav-toggle" aria-label="Menú" aria-expanded="false" aria-controls="site-menu" data-nav-toggle>
+      <svg class="ph icon-open" aria-hidden="true" focusable="false"><use href="#ph-list"/></svg>
+      <svg class="ph icon-close" aria-hidden="true" focusable="false"><use href="#ph-x"/></svg>
+    </button>
+  </nav>
+  <div class="site-menu" id="site-menu" hidden>
+    <a href="quienes-somos.html">Quiénes somos</a>
+    <a href="trayectoria.html">Trayectoria</a>
+    <a href="blog.html">Blog</a>
+    <a href="#faq">FAQ</a>
+  </div>
+  <div class="site-cta-bar" id="site-cta-bar" hidden>
+    <div class="site-cta-copy"><span class="site-cta-title">Inscripciones abiertas</span><span class="site-cta-sub text-muted">Sin experiencia · 2 minutos</span></div>
+    <a class="btn btn-primary" href="#unete">Inscríbete →</a>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+
+<section class="hero" data-hero aria-labelledby="hero-title">
+  <!-- hero.js inserts the decorative background layers (grid, gears, CAD cube, code, circuit board) here -->
+  <div class="hero-vignette" aria-hidden="true"></div>
+  <div class="hero-vignette hero-vignette--narrow" aria-hidden="true"></div>
+  <div class="hero-content">
+    <span class="tag tag-accent hero-badge"><span class="hero-badge-dot"></span>Inscripciones abiertas · Octubre 2026</span>
+    <h1 class="hero-title" id="hero-title"><span class="hero-title-outline">JOIN</span> <span class="hero-title-solid">ROBOTICS!</span></h1>
+    <p class="hero-rotator">
+      <span class="hero-rotator-lead">Ven a</span>
+      <span class="hero-word" data-hero-word aria-hidden="true">programar<span class="hero-cursor">_</span></span>
+      <span class="sr-only">programar, crear IA física, soldar, diseñar en CAD, competir, ganar</span>
+    </p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#unete">Inscríbete · 2 min →</a>
+      <a class="btn btn-secondary" href="#que-haras">¿Qué harás aquí?</a>
+    </div>
+    <div class="hero-stats hero-stats--wide">
+      <span><b>5º</b> Campeonato de las Américas · Panamá 2025</span>
+      <span class="hero-stats-dot" aria-hidden="true"></span>
+      <span><b>~10 años</b> de experiencia competitiva acumulada entre los fundadores</span>
+    </div>
+    <div class="hero-stats hero-stats--narrow">
+      <span><b>5º</b> en las Américas · Panamá 2025</span>
+      <span>Sin experiencia previa · Cualquier carrera</span>
+    </div>
+  </div>
+  <div class="hero-fade" aria-hidden="true"></div>
+  <div class="hero-scroll" aria-hidden="true"><span>Desliza</span><span class="hero-scroll-arrow">↓</span></div>
+</section>
+
+<section class="what" id="que-haras" aria-labelledby="what-title">
+  <div class="what-inner">
+    <div class="what-head" data-reveal="0">
+      <div class="eyebrow"><span class="eyebrow-num">01</span><span class="eyebrow-rule"></span><span>Qué harás</span></div>
+      <h2 id="what-title">Construye robots con IA y llévalos a competir.</h2>
+      <p>Aprendes desde cero, trabajas con estudiantes de todas las carreras y representas a la Unimet fuera del país.</p>
+    </div>
+    <div class="what-cards">
+      <div class="card what-card" data-reveal="1">
+        <svg class="ph what-card-icon" aria-hidden="true" focusable="false"><use href="#ph-graduation-cap"/></svg>
+        <h3 class="card-title">Aprende desde cero</h3>
+        <p class="card-body">Talleres de octubre a diciembre. No necesitas experiencia, te enseñamos.</p>
+      </div>
+      <div class="card what-card" data-reveal="2">
+        <svg class="ph what-card-icon" aria-hidden="true" focusable="false"><use href="#ph-robot"/></svg>
+        <h3 class="card-title">Robots autónomos con IA</h3>
+        <p class="card-body">Programación, electrónica y diseño mecánico en un mismo robot.</p>
+      </div>
+      <div class="card what-card" data-reveal="3">
+        <svg class="ph what-card-icon" aria-hidden="true" focusable="false"><use href="#ph-airplane-tilt"/></svg>
+        <h3 class="card-title">Compite fuera del país</h3>
+        <p class="card-body">WRO y Technoxian. Estas competencias cubren gran parte del viaje.</p>
+      </div>
+      <div class="card what-card" data-reveal="4">
+        <svg class="ph what-card-icon" aria-hidden="true" focusable="false"><use href="#ph-users-three"/></svg>
+        <h3 class="card-title">De cualquier carrera</h3>
+        <p class="card-body">También necesitamos diseño, redes, logística y patrocinios.</p>
+      </div>
+    </div>
+    <div class="what-media">
+      <div class="lighten what-photo" data-reveal="1"><img src="assets/soldering.png" alt="Miembro de Arbi soldando un circuito" loading="lazy" decoding="async"></div>
+      <div class="lighten what-photo" data-reveal="2"><img class="is-coding" src="assets/coding.png" alt="Programando el robot" loading="lazy" decoding="async"></div>
+      <div class="what-picks" data-reveal="3">
+        <div class="what-picks-head"><span class="what-picks-title">¿Qué te llama la atención?</span><span class="what-picks-sub text-muted">Toca una y empieza tu inscripción.</span></div>
+        <div class="what-picks-list">
+          <button type="button" class="quick-pick" data-quick-pick="Programación">Programación</button>
+          <button type="button" class="quick-pick" data-quick-pick="Electrónica">Electrónica</button>
+          <button type="button" class="quick-pick" data-quick-pick="Mecánica / CAD">Mecánica / CAD</button>
+          <button type="button" class="quick-pick" data-quick-pick="Diseño 3D / impresión">Diseño 3D / impresión</button>
+          <button type="button" class="quick-pick" data-quick-pick="Estrategia de competencia">Estrategia de competencia</button>
+          <button type="button" class="quick-pick" data-quick-pick="Diseño / redes / media">Diseño / redes / media</button>
+          <button type="button" class="quick-pick" data-quick-pick="Logística y patrocinios">Logística y patrocinios</button>
+          <button type="button" class="quick-pick" data-quick-pick="Solo quiero aprender">Solo quiero aprender</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="wins" id="logros" aria-labelledby="wins-title">
+  <div class="wins-inner">
+    <div class="wins-head" data-reveal="0">
+      <div class="eyebrow"><span class="eyebrow-num">02</span><span class="eyebrow-rule"></span><span>Logros</span></div>
+      <a class="more-link" href="trayectoria.html">Ver la trayectoria <svg class="ph" aria-hidden="true" focusable="false"><use href="#ph-arrow-right"/></svg></a>
+    </div>
+    <div class="wins-card" data-reveal="1">
+      <div class="lighten wins-photo"><img src="assets/ceremony.png" alt="Ceremonia de premiación, Panamá 2025" loading="lazy" decoding="async"></div>
+      <div class="wins-shade"></div>
+      <div class="wins-ring"></div>
+      <div class="wins-copy">
+        <span class="tag tag-accent">Panamá 2025</span>
+        <h2 id="wins-title">Top 5 de las Américas.</h2>
+        <p>En 2025, nuestro primer año, quedamos 5º en el Campeonato de las Américas y primeros en la fase de grupos. El próximo podio lo construyes con nosotros.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stats" aria-label="Cifras del club">
+  <div class="stats-inner">
+    <div class="stat" data-reveal="0"><span class="stat-value">5º</span><span class="stat-label">Campeonato de las Américas · Panamá 2025</span></div>
+    <div class="stat" data-reveal="1"><span class="stat-value">1º</span><span class="stat-label">Fase de grupos · Panamá 2025</span></div>
+    <div class="stat" data-reveal="2"><span class="stat-value">~10</span><span class="stat-label">Años de experiencia competitiva acumulada entre los fundadores</span></div>
+  </div>
+</section>
+
+<section class="season" id="temporada" aria-labelledby="season-title">
+  <div class="season-inner">
+    <div class="season-head" data-reveal="0">
+      <div class="season-head-copy">
+        <div class="eyebrow"><span class="eyebrow-num">03</span><span class="eyebrow-rule"></span><span>Temporada 2026–27</span></div>
+        <h2 id="season-title">Tu primera temporada empieza ahora.</h2>
+      </div>
+      <a class="more-link" href="trayectoria.html">Ver la trayectoria completa <svg class="ph" aria-hidden="true" focusable="false"><use href="#ph-arrow-right"/></svg></a>
+    </div>
+    <ol class="season-grid">
+      <li class="season-item" data-reveal="1">
+        <div class="season-track"><div class="season-line season-line--now" data-draw></div><span class="season-node season-node--now"><span class="season-ping"></span></span></div>
+        <div class="season-when"><span class="season-date">OCT 2026</span><span class="tag tag-accent">Estás aquí</span></div>
+        <h3 class="season-title">Reclutamiento</h3>
+        <p class="season-desc">Abrimos inscripciones para nuevos miembros.</p>
+      </li>
+      <li class="season-item" data-reveal="2">
+        <div class="season-track"><div class="season-line"></div><span class="season-node season-node--next"></span></div>
+        <span class="season-date">OCT – DIC 2026</span>
+        <h3 class="season-title">Talleres de formación</h3>
+        <p class="season-desc">Talleres multidisciplinarios para llegar listo a la temporada.</p>
+      </li>
+      <li class="season-item" data-reveal="3">
+        <div class="season-track"><div class="season-line"></div><span class="season-node"></span></div>
+        <span class="season-date">ENE 2027</span>
+        <h3 class="season-title">Inicio de temporada WRO</h3>
+        <p class="season-desc">Arranca el reto de la World Robot Olympiad.</p>
+      </li>
+      <li class="season-item" data-reveal="4">
+        <div class="season-track"><div class="season-line season-line--fade"></div><span class="season-node"></span></div>
+        <span class="season-date">FEB 2027</span>
+        <h3 class="season-title">Technoxian</h3>
+        <p class="season-desc">Competencia internacional.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="about" id="quienes" aria-labelledby="about-title">
+  <div class="about-card" data-reveal="0">
+    <div class="lighten about-photo"><img src="assets/team.png" alt="El equipo Arbi" loading="lazy" decoding="async"></div>
+    <div class="about-copy">
+      <div class="eyebrow"><span class="eyebrow-num">04</span><span class="eyebrow-rule"></span><span>Quiénes somos</span></div>
+      <h2 id="about-title">Somos Arbi.</h2>
+      <p>El club de robótica competitiva de la Universidad Metropolitana. Nacimos en 2025 y en nuestro primer año llegamos al Top 5 de las Américas.</p>
+      <div class="about-tags"><span class="tag tag-neutral">Viernes · 2:00 pm</span><span class="tag tag-neutral">Todas las carreras</span><span class="tag tag-neutral">Sin experiencia previa</span></div>
+      <a class="more-link" href="quienes-somos.html">Conoce al equipo <svg class="ph" aria-hidden="true" focusable="false"><use href="#ph-arrow-right"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="join" id="unete" aria-labelledby="join-title">
+  <div class="join-inner">
+    <div class="join-pitch" data-reveal="0">
+      <div class="eyebrow"><span class="eyebrow-num">05</span><span class="eyebrow-rule"></span><span>Inscríbete</span></div>
+      <h2 class="join-title" id="join-title"><span class="join-title-outline">JOIN</span><br>ROBOTICS!</h2>
+      <p class="join-lead">Tres pasos, unos 2 minutos. No necesitas experiencia: nosotros te enseñamos.</p>
+      <ul class="join-facts">
+        <li><svg class="ph" aria-hidden="true" focusable="false"><use href="#ph-calendar-blank"/></svg>Sesiones los viernes, 2:00 pm</li>
+        <li><svg class="ph" aria-hidden="true" focusable="false"><use href="#ph-graduation-cap"/></svg>Abierto a todas las carreras</li>
+        <li><svg class="ph" aria-hidden="true" focusable="false"><use href="#ph-airplane-tilt"/></svg>WRO y Technoxian cubren gran parte del viaje</li>
+        <li><svg class="ph" aria-hidden="true" focusable="false"><use href="#ph-trophy"/></svg>5º en las Américas · Panamá 2025</li>
+      </ul>
+    </div>
+
+    <div class="join-card" data-reveal="1">
+      <!-- Submissions go to the club's Google Sheet through an Apps Script web app (SHEET_URL in js/join.js). -->
+      <form class="join-form" id="join-form" novalidate>
+        <div class="join-progress">
+          <div class="join-progress-row"><span class="join-progress-step">PASO <span data-step-num>1</span> / 3</span><span class="text-muted" data-step-label>Intereses</span></div>
+          <div class="join-bars" aria-hidden="true"><span class="join-bar is-on" data-bar></span><span class="join-bar" data-bar></span><span class="join-bar" data-bar></span></div>
+        </div>
+
+        <div class="join-step" data-step role="group" aria-labelledby="step1-title">
+          <div class="join-step-head"><h3 class="join-step-title" id="step1-title" tabindex="-1">¿Qué te llama la atención?</h3><span class="join-step-sub text-muted">Elige todas las que quieras.</span></div>
+          <div class="chips">
+            <label class="chip"><input type="checkbox" name="intereses" value="Programación"><svg class="ph" aria-hidden="true" focusable="false"><use href="#ph-check"/></svg>Programación</label>
+            <label class="chip"><input type="checkbox" name="intereses" value="Electrónica"><svg class="ph" aria-hidden="true" focusable="false"><use href="#ph-check"/></svg>Electrónica</label>
+            <label class="chip"><input type="checkbox" name="intereses" value="Mecánica / CAD"><svg class="ph" aria-hidden="true" focusable="false"><use href="#ph-check"/></svg>Mecánica / CAD</label>
+            <label class="chip"><input type="checkbox" name="intereses" value="Diseño 3D / impresión"><svg class="ph" aria-hidden="true" focusable="false"><use href="#ph-check"/></svg>Diseño 3D / impresión</label>
+            <label class="chip"><input type="checkbox" name="intereses" value="Estrategia de competencia"><svg class="ph" aria-hidden="true" focusable="false"><use href="#ph-check"/></svg>Estrategia de competencia</label>
+            <label class="chip"><input type="checkbox" name="intereses" value="Diseño / redes / media"><svg class="ph" aria-hidden="true" focusable="false"><use href="#ph-check"/></svg>Diseño / redes / media</label>
+            <label class="chip"><input type="checkbox" name="intereses" value="Logística y patrocinios"><svg class="ph" aria-hidden="true" focusable="false"><use href="#ph-check"/></svg>Logística y patrocinios</label>
+            <label class="chip"><input type="checkbox" name="intereses" value="Solo quiero aprender"><svg class="ph" aria-hidden="true" focusable="false"><use href="#ph-check"/></svg>Solo quiero aprender</label>
+          </div>
+        </div>
+
+        <div class="join-step" data-step role="group" aria-labelledby="step2-title" hidden>
+          <div class="join-step-head"><h3 class="join-step-title" id="step2-title" tabindex="-1">Tus datos</h3><span class="join-step-sub text-muted">Los campos con * son obligatorios.</span></div>
+          <div class="join-fields">
+            <div class="field"><label for="f-nombre">Nombre y Apellido<span class="req" aria-hidden="true"> *</span></label><input class="input" id="f-nombre" name="nombre" type="text" placeholder="Valentina Rojas" autocomplete="name" required></div>
+            <div class="field"><label for="f-ci">CI<span class="req" aria-hidden="true"> *</span></label><input class="input" id="f-ci" name="ci" type="text" placeholder="V-30.123.456" autocomplete="off" required></div>
+            <div class="field"><label for="f-carnet">Carnet de estudiante<span class="req" aria-hidden="true"> *</span></label><input class="input" id="f-carnet" name="carnet" type="text" placeholder="20251130045" autocomplete="off" required></div>
+            <div class="field"><label for="f-correo">Correo electrónico institucional<span class="req" aria-hidden="true"> *</span></label><input class="input" id="f-correo" name="correo" type="email" placeholder="nombre@correo.unimet.edu.ve" autocomplete="email" required></div>
+            <div class="field"><label for="f-tel">Número de teléfono<span class="req" aria-hidden="true"> *</span></label><input class="input" id="f-tel" name="tel" type="tel" placeholder="+58 412 000 0000" autocomplete="tel" required></div>
+            <div class="field">
+              <label for="f-carrera">Carrera<span class="req" aria-hidden="true"> *</span></label>
+              <select class="input" id="f-carrera" name="carrera" required>
+                <option value="">Selecciona tu carrera</option>
+                <option>Ingeniería Eléctrica</option>
+                <option>Ingeniería de Sistemas</option>
+                <option>Ingeniería Mecánica</option>
+                <option>Ingeniería Química</option>
+                <option>Ingeniería de Producción</option>
+                <option>Matemáticas Industriales</option>
+                <option>Ingeniería Civil</option>
+                <option>Ciencias Administrativas</option>
+                <option>Educación</option>
+                <option>Estudios Internacionales</option>
+                <option>Turismo Sostenible</option>
+                <option>Comunicación Social y Empresarial</option>
+                <option>Contaduría Pública</option>
+                <option>Economía Empresarial</option>
+                <option>Derecho</option>
+                <option>Estudios Liberales</option>
+                <option>Idiomas Modernos</option>
+                <option>Psicología</option>
+              </select>
+            </div>
+          </div>
+          <div class="join-fields">
+            <div class="field">
+              <label for="f-seleccion">¿Participas en alguna selección deportiva?</label>
+              <select class="input" id="f-seleccion" name="seleccion">
+                <option value="">No participo</option>
+                <option>Baloncesto masculino</option>
+                <option>Baloncesto femenino</option>
+                <option>Béisbol</option>
+                <option>Fútbol masculino</option>
+                <option>Fútbol sala</option>
+                <option>Karate</option>
+                <option>Kickingball</option>
+                <option>Pádel femenino</option>
+                <option>Pádel masculino</option>
+                <option>Rugby femenino</option>
+                <option>Rugby masculino</option>
+                <option>Tenis de campo femenino</option>
+                <option>Tenis de campo masculino</option>
+                <option>Tenis de mesa femenino</option>
+                <option>Tenis de mesa masculino</option>
+                <option>Voleibol femenino</option>
+                <option>Voleibol masculino</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-programa">¿Perteneces a algún programa de beneficio socioeconómico?</label>
+              <select class="input" id="f-programa" name="programa">
+                <option value="">No pertenezco</option>
+                <option>Programa de Ayudantía</option>
+                <option>Programa de Excelencia</option>
+                <option>Beca Impacto</option>
+                <option>Programa extinto</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="join-step join-step--roomy" data-step role="group" aria-labelledby="step3-title" hidden>
+          <div class="join-step-head"><h3 class="join-step-title" id="step3-title" tabindex="-1">Experiencia</h3><span class="join-step-sub text-muted">Nada de esto es requisito. Nos ayuda a armar los talleres.</span></div>
+          <div class="field">
+            <label for="f-trimestre">Trimestre</label>
+            <select class="input" id="f-trimestre" name="trimestre">
+              <option value="">Selecciona</option>
+              <option value="1">1º trimestre</option>
+              <option value="2">2º trimestre</option>
+              <option value="3">3º trimestre</option>
+              <option value="4">4º trimestre</option>
+              <option value="5">5º trimestre</option>
+              <option value="6">6º trimestre</option>
+              <option value="7">7º trimestre</option>
+              <option value="8">8º trimestre</option>
+              <option value="9">9º trimestre</option>
+              <option value="10">10º trimestre</option>
+              <option value="11">11º trimestre</option>
+              <option value="12">12º trimestre</option>
+              <option value="13">Más de 12 trimestres</option>
+            </select>
+          </div>
+          <div class="field join-field-stack" role="group" aria-labelledby="exp-label">
+            <label id="exp-label">¿Tienes experiencia previa en robótica?</label>
+            <div class="seg">
+              <label class="seg-opt"><input type="radio" name="experiencia_previa" value="si">Sí</label>
+              <label class="seg-opt"><input type="radio" name="experiencia_previa" value="no">No</label>
+            </div>
+          </div>
+          <div class="field" data-exp-detail hidden>
+            <label for="f-detalle">Cuéntanos qué has hecho</label>
+            <textarea class="input" id="f-detalle" name="experiencia_detalle" placeholder="Competencias, proyectos, cursos…"></textarea>
+          </div>
+          <div class="field join-field-stack">
+            <label id="tools-label">Herramientas que conoces</label>
+            <div class="chips chips--sm" role="group" aria-labelledby="tools-label">
+              <label class="chip"><input type="checkbox" name="herramientas" value="Python"><svg class="ph" aria-hidden="true" focusable="false"><use href="#ph-check"/></svg>Python</label>
+              <label class="chip"><input type="checkbox" name="herramientas" value="C / C++"><svg class="ph" aria-hidden="true" focusable="false"><use href="#ph-check"/></svg>C / C++</label>
+              <label class="chip"><input type="checkbox" name="herramientas" value="MATLAB"><svg class="ph" aria-hidden="true" focusable="false"><use href="#ph-check"/></svg>MATLAB</label>
+              <label class="chip"><input type="checkbox" name="herramientas" value="SolidWorks / Fusion 360"><svg class="ph" aria-hidden="true" focusable="false"><use href="#ph-check"/></svg>SolidWorks / Fusion 360</label>
+              <label class="chip"><input type="checkbox" name="herramientas" value="Impresión 3D"><svg class="ph" aria-hidden="true" focusable="false"><use href="#ph-check"/></svg>Impresión 3D</label>
+              <label class="chip"><input type="checkbox" name="herramientas" value="Arduino"><svg class="ph" aria-hidden="true" focusable="false"><use href="#ph-check"/></svg>Arduino</label>
+              <label class="chip"><input type="checkbox" name="herramientas" value="Microcontroladores (ESP32, STM32…)"><svg class="ph" aria-hidden="true" focusable="false"><use href="#ph-check"/></svg>Microcontroladores (ESP32, STM32…)</label>
+              <label class="chip"><input type="checkbox" name="herramientas" value="Circuitos electrónicos"><svg class="ph" aria-hidden="true" focusable="false"><use href="#ph-check"/></svg>Circuitos electrónicos</label>
+              <label class="chip"><input type="checkbox" name="herramientas" value="Soldadura"><svg class="ph" aria-hidden="true" focusable="false"><use href="#ph-check"/></svg>Soldadura</label>
+              <label class="chip"><input type="checkbox" name="herramientas" value="Raspberry Pi"><svg class="ph" aria-hidden="true" focusable="false"><use href="#ph-check"/></svg>Raspberry Pi</label>
+              <label class="chip"><input type="checkbox" name="herramientas" value="ROS"><svg class="ph" aria-hidden="true" focusable="false"><use href="#ph-check"/></svg>ROS</label>
+              <label class="chip"><input type="checkbox" name="herramientas" value="Visión por computadora"><svg class="ph" aria-hidden="true" focusable="false"><use href="#ph-check"/></svg>Visión por computadora</label>
+              <label class="chip"><input type="checkbox" name="herramientas" value="Ninguna todavía"><svg class="ph" aria-hidden="true" focusable="false"><use href="#ph-check"/></svg>Ninguna todavía</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="join-alert" role="alert" data-alert hidden><svg class="ph" aria-hidden="true" focusable="false"><use href="#ph-warning-circle"/></svg><span data-alert-text></span></div>
+
+        <div class="join-nav">
+          <button type="button" class="btn btn-secondary join-back" data-back hidden>← Atrás</button>
+          <span class="join-hint text-muted" data-hint aria-live="polite">Elige al menos una opción</span>
+          <button type="submit" class="btn btn-primary join-next" data-next disabled>Continuar →</button>
+        </div>
+      </form>
+
+      <div class="join-done" id="join-done" hidden>
+        <svg class="ph join-done-icon" aria-hidden="true" focusable="false"><use href="#ph-check-circle"/></svg>
+        <div class="join-done-text">
+          <h3 class="join-done-title" tabindex="-1">¡Bienvenido a Arbi, <span data-first-name>nuevo miembro</span>!</h3>
+          <p>Recibimos tu inscripción. Te esperamos en la primera sesión.</p>
+        </div>
+        <!-- First session: update the card, the label and the calendar link's dates= together. -->
+        <div class="join-session">
+          <div class="join-session-date"><span class="join-session-month">OCT</span><span class="join-session-day">16</span></div>
+          <div class="join-session-info"><span class="join-session-title">Primera sesión de nuevos miembros</span><span class="join-session-when text-muted">Viernes 16 de octubre · 2:00 pm</span></div>
+        </div>
+        <div class="join-done-actions">
+          <a class="btn btn-primary" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Arbi%20%C2%B7%20Primera%20sesi%C3%B3n%20de%20nuevos%20miembros&amp;dates=20261016T140000/20261016T160000&amp;ctz=America/Caracas&amp;details=Club%20de%20rob%C3%B3tica%20Arbi%20%C2%B7%20Universidad%20Metropolitana" target="_blank" rel="noopener noreferrer"><svg class="ph" aria-hidden="true" focusable="false"><use href="#ph-calendar-plus"/></svg>Añadir al calendario</a>
+          <a class="btn btn-secondary" href="https://chat.whatsapp.com/E1lMmJFpK9zKRlx5eDDsvp?s=cl&amp;p=a&amp;mlu=4&amp;ilr=4" target="_blank" rel="noopener noreferrer"><svg class="ph" aria-hidden="true" focusable="false"><use href="#ph-whatsapp-logo"/></svg>Unirme al grupo de WhatsApp</a>
+        </div>
+        <div class="join-picked">
+          <span class="join-picked-label text-muted">Te interesa</span>
+          <div class="join-picked-list" data-picked></div>
+        </div>
+        <button type="button" class="btn btn-ghost join-edit" data-restart>Editar respuestas</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq" aria-labelledby="faq-title">
+  <div class="faq-inner">
+    <div class="faq-aside" data-reveal="0">
+      <div class="eyebrow"><span class="eyebrow-num">06</span><span class="eyebrow-rule"></span><span>FAQ</span></div>
+      <h2 id="faq-title">¿Dudas antes de inscribirte?</h2>
+      <a class="btn btn-secondary" href="https://chat.whatsapp.com/E1lMmJFpK9zKRlx5eDDsvp?s=cl&amp;p=a&amp;mlu=4&amp;ilr=4" target="_blank" rel="noopener noreferrer"><svg class="ph" aria-hidden="true" focusable="false"><use href="#ph-whatsapp-logo"/></svg>Escríbenos por WhatsApp</a>
+    </div>
+    <div class="faq-list" data-reveal="1">
+      <details class="faq-item" name="faq" open>
+        <summary><span>¿Cuándo trabajan?</span><svg class="ph icon-minus" aria-hidden="true" focusable="false"><use href="#ph-minus"/></svg><svg class="ph icon-plus" aria-hidden="true" focusable="false"><use href="#ph-plus"/></svg></summary>
+        <p>Los viernes a las 2:00 pm.</p>
+      </details>
+      <details class="faq-item" name="faq">
+        <summary><span>¿Se necesita experiencia?</span><svg class="ph icon-minus" aria-hidden="true" focusable="false"><use href="#ph-minus"/></svg><svg class="ph icon-plus" aria-hidden="true" focusable="false"><use href="#ph-plus"/></svg></summary>
+        <p>No, nosotros te enseñamos.</p>
+      </details>
+      <details class="faq-item" name="faq">
+        <summary><span>¿Hay que cubrir los costos de los viajes internacionales?</span><svg class="ph icon-minus" aria-hidden="true" focusable="false"><use href="#ph-minus"/></svg><svg class="ph icon-plus" aria-hidden="true" focusable="false"><use href="#ph-plus"/></svg></summary>
+        <p>Depende de la competencia. La WRO y Technoxian cubren desde gran parte hasta la totalidad de los costos del viaje.</p>
+      </details>
+      <details class="faq-item" name="faq">
+        <summary><span>¿Puedo unirme si soy de otra carrera (no ingeniería)?</span><svg class="ph icon-minus" aria-hidden="true" focusable="false"><use href="#ph-minus"/></svg><svg class="ph icon-plus" aria-hidden="true" focusable="false"><use href="#ph-plus"/></svg></summary>
+        <p>Sí, la agrupación no requiere ninguna carrera en específico.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<div class="site-footer-wrap">
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <span class="site-footer-brand"><span class="site-footer-mark"></span><b>Arbi</b> · Robótica competitiva · Universidad Metropolitana</span>
+      <nav class="site-footer-links" aria-label="Secundaria">
+        <a href="quienes-somos.html">Quiénes somos</a>
+        <a href="trayectoria.html">Trayectoria</a>
+        <a href="blog.html">Blog</a>
+      </nav>
+      <div class="site-footer-social">
+        <a href="https://instagram.com/arbimet" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-icon" aria-label="Instagram"><svg class="ph" aria-hidden="true" focusable="false"><use href="#ph-instagram-logo"/></svg></a>
+        <a href="https://chat.whatsapp.com/E1lMmJFpK9zKRlx5eDDsvp?s=cl&amp;p=a&amp;mlu=4&amp;ilr=4" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-icon" aria-label="WhatsApp"><svg class="ph" aria-hidden="true" focusable="false"><use href="#ph-whatsapp-logo"/></svg></a>
+        <a href="https://discord.gg/MexqS4QgyN" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-icon" aria-label="Discord"><svg class="ph" aria-hidden="true" focusable="false"><use href="#ph-discord-logo"/></svg></a>
+        <a href="mailto:arbi@unimet.edu.ve" class="btn btn-ghost btn-icon" aria-label="Email"><svg class="ph" aria-hidden="true" focusable="false"><use href="#ph-envelope-simple"/></svg></a>
+      </div>
+    </div>
+  </footer>
+</div>
+
+</div>
+</body>
+</html>
